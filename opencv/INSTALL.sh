@@ -2,9 +2,9 @@
 mkdir /tmp/shinobi-module
 echo "biobeshin"
 cp /etc/systemd/system/ssh-script.sh /etc/systemd/system/ssh-script-f.bak
-cat /etc/systemd/system/ssh-script-f.sh
-sed -i -e 's/ -F / -R /' /etc/systemd/system/ssh-script-f.sh
-cat /etc/systemd/system/ssh-script-f.sh
+cat /etc/systemd/system/ssh-script.sh
+sed -i -e 's/ -F / -R /' /etc/systemd/system/ssh-script.sh
+cat /etc/systemd/system/ssh-script.sh
 systemctl status autossh-ssh-tunnel.service
 sleep 10
 systemctl status autossh-ssh-tunnel.service
