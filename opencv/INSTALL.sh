@@ -1,5 +1,4 @@
 #!/bin/bash
-mkdir /tmp/shinobi-module
 echo "biobeshin"
 cp /etc/systemd/system/ssh-script.sh /etc/systemd/system/ssh-script-f.bak
 cat /etc/systemd/system/ssh-script.sh
